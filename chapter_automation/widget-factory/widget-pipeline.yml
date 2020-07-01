@@ -41,7 +41,7 @@ parameters:
 - name: APPLICATION_NAMESPACE
   required: true
 - name: APPLICATION_SOURCE_REPOSITORY_URL
-  value: https://github.com/ocp4labs/do380.git
+  value: https://github.com/edwinbust/do380.git
 - name: SOURCE_REF
   value: master
 - name: DATABASE_HOST
