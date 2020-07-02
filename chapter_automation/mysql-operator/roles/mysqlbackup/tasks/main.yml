@@ -10,7 +10,7 @@
 - block: 
     - name: Get mysqlbackup status
       k8s_facts:
-        api_version: lab.redhat.com/v1
+        api_version: v1
         kind: MysqlBackup
         name: "{{ name }}"
         namespace: "{{ namespace }}"
@@ -18,7 +18,7 @@
 
     - name: Set mysqlbackup pvc_count status to 0 if it has never been set
       k8s_status:
-        api_version: lab.redhat.com/v1
+        api_version: v1
         kind: MysqlBackup
         name: "{{ name }}"
         namespace: "{{ namespace }}"
@@ -75,7 +75,7 @@
 
     - name: Set backup_active status to true on mysqlbackup if a backup is running
       k8s_status:
-        api_version: lab.redhat.com/v1
+        api_version: v1
         kind: MysqlBackup
         name: "{{ name }}"
         namespace: "{{ namespace }}"
