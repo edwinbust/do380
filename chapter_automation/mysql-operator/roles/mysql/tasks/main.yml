@@ -9,7 +9,7 @@
     definition:
       spec:
         mysql_root_password: "{{ mysql_root_password }}"
-    api_version: lab.redhat.com/v1
+    api_version: v1
     kind: Mysql
     name: "{{ name }}"
     namespace: "{{ namespace }}"
